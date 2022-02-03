@@ -21,6 +21,7 @@ import { BlogComponent } from './Final/blog/blog.component';
 import { EventComponent } from './Final/event/event.component';
 import { FooterComponent } from './Final/footer/footer.component';
 import { CoursesComponent } from './Final/courses/courses.component';
+import { QuizComponent } from './Final/quiz/quiz.component';
 
 @NgModule({
     declarations: [
@@ -39,7 +40,9 @@ import { CoursesComponent } from './Final/courses/courses.component';
        
         FooterComponent,
        
-        CoursesComponent
+        CoursesComponent,
+       
+        QuizComponent
     ],
     imports: [
         BrowserAnimationsModule,

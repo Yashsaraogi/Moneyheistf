@@ -24,6 +24,7 @@ import { ContactUsComponent } from './Final/contact-us/contact-us.component';
 import { EventComponent } from './Final/event/event.component';
 import { BlogComponent } from './Final/blog/blog.component';
 import { CoursesComponent } from './Final/courses/courses.component';
+import { QuizComponent } from './Final/quiz/quiz.component';
 
 
 const routes: Routes =[
@@ -48,7 +49,8 @@ const routes: Routes =[
     { path: 'contact-us',    component: ContactUsComponent },
     { path: 'event',    component: EventComponent },
     { path: 'blog',    component: BlogComponent },
-    { path: 'courses',    component: CoursesComponent }
+    { path: 'courses',    component: CoursesComponent },
+    { path: 'quiz', component:QuizComponent }
 ];
 
 @NgModule({
@@ -56,7 +58,7 @@ const routes: Routes =[
         CommonModule,
         BrowserModule,
         RouterModule.forRoot(routes,{
-          useHash: true
+          useHash: false
         })
     ],
     exports: [
