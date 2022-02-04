@@ -39,6 +39,13 @@ button{
     padding: 10px 20px;
     margin-top: 40px;
     box-shadow: 0 0 40px rgba(8, 7, 16, 0.6);
+    font-family: 'Balsamiq Sans', cursive;
+}
+
+input{
+    outline: none;
+    border: none;
+    border-radius: 4px;
 }
 .question-box{
     width: 50%;
@@ -48,6 +55,7 @@ button{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    text-align: center;
 }
 .player-cards{
     z-index: 5;
@@ -55,6 +63,13 @@ button{
 }
 .question-box h1{
     color: white;
+    font-family: 'Anton', sans-serif !important;
+    background-color: rgb(192, 0, 0);
+    width: max-content;
+    padding: 10px 25px;
+    color: black;
+    margin: 20px auto;
+    margin-top: 0px;
 }
 .job-card{
     height: 230px;
@@ -78,4 +93,5 @@ button{
 .login-label{
     color: white;
     padding-right: 20px;
+    font-family: 'Balsamiq Sans', cursive;
 }

@@ -23,6 +23,7 @@ button{
 }
 h1{
     color: white;
+    font-family: 'Anton', sans-serif !important;
 }   
 .question-box{
     width: 45%;
