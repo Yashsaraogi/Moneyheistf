@@ -23,8 +23,19 @@ team ;
     this.team= localStorage.getItem('teamname')
   }
   contactSubmit(){
-    console.log(this.par11,this.par13,this.team,
-      this.par12)
+    var url1="https://anupam.ecell.in/main/";
+      var body = new FormData();
+      body.append('round', this.round)
+      
+      
+      this.http.post<any>(url1,body).subscribe(
+        data=>{
+          console.log(data)
+          if (data=="success"){
+            alert("Query Sent Successfully");
+          }
+        }
+      )
       
 
     

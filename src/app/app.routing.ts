@@ -24,6 +24,12 @@ import { QuizComponent } from './Final/quiz/quiz.component';
 import { LoginComponent } from './Final/login/login.component';
 import { LoginMainComponent } from './Final/login-main/login-main.component';
 import { BidComponent } from './Final/bid/bid.component';
+import { Round2Component } from './round2/round2.component';
+import { Round3Component } from './round3/round3.component';
+import { Round4Component } from './round4/round4.component';
+import { Round5Component } from './round5/round5.component';
+import { Round6Component } from './round6/round6.component';
+import { Round7Component } from './round7/round7.component';
 
 
 const routes: Routes =[
@@ -43,8 +49,13 @@ const routes: Routes =[
     { path: 'examples/productpage', component: ProductpageComponent },
     { path: 'examples/profile',     component: ProfileComponent },
     { path: 'examples/register',    component: RegisterComponent },
-   
-   
+    { path: 'round2', component:Round2Component },
+    { path: 'round3', component:Round3Component },
+    { path: 'round4', component:Round4Component },
+    { path: 'round5', component:Round5Component },
+    { path: 'round6', component:Round6Component },
+    { path: 'round7', component:Round7Component },
+
     { path: 'quiz', component:QuizComponent },
     { path: 'land', component:LoginComponent },
     { path:'login', component:LoginMainComponent},

@@ -6,15 +6,15 @@ import { ActivatedRoute } from '@angular/router';
 import { Route } from '@angular/compiler/src/core';
 
 @Component({
-  selector: 'app-round3',
-  templateUrl: './round3.component.html',
-  styleUrls: ['./round3.component.css']
+  selector: 'app-round4',
+  templateUrl: './round4.component.html',
+  styleUrls: ['./round4.component.css']
 })
-export class Round3Component implements OnInit {
+export class Round4Component implements OnInit {
 
-  par31;
+  par41;
   
-  round='3';
+  round='4';
   team ;
     constructor(private http: HttpClient, private route: ActivatedRoute,private router: Router,private modalService: NgbModal,) { }
   
@@ -39,10 +39,10 @@ export class Round3Component implements OnInit {
         
   
       
-      var url="https://anupam.ecell.in/addr3/";
+      var url="https://anupam.ecell.in/addr4/";
       var body = new FormData();
       body.append('team', this.team)
-      body.append('par31', this.par31)
+      body.append('par41', this.par41)
       
       
       this.http.post<any>(url,body).subscribe(

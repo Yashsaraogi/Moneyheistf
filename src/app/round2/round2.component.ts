@@ -23,11 +23,23 @@ export class Round2Component implements OnInit {
       this.team= localStorage.getItem('teamname')
     }
     contactSubmit(){
+      var url1="https://anupam.ecell.in/main/";
+      var body = new FormData();
+      body.append('round', this.round)
       
+      
+      this.http.post<any>(url1,body).subscribe(
+        data=>{
+          console.log(data)
+          if (data=="success"){
+            alert("Query Sent Successfully");
+          }
+        }
+      )
         
   
       
-      var url="https://anupam.ecell.in/addr1/";
+      var url="https://anupam.ecell.in/addr2/";
       var body = new FormData();
       body.append('team', this.team)
       body.append('par21', this.par21)
