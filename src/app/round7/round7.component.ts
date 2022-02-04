@@ -43,7 +43,7 @@ export class Round7Component implements OnInit {
       var url1="https://anupam.ecell.in/main/";
       var body = new FormData();
       body.append('round', this.round)
-      
+      body.append('team', this.team)
       
       this.http.post<any>(url1,body).subscribe(
         data=>{
