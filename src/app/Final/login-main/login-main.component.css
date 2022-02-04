@@ -1,8 +1,8 @@
 .main{
     width: 100%;
-    background: url(assets/img/money/prof.png);
-    height: 100vh;
+    background: url(assets/img/money/entry.png);
     background-size: cover;
+    height: 100vh;
 }
 .overlay{
     background-color: black;
@@ -44,10 +44,10 @@ button{
     width: 50%;
     padding: 45px;
     margin: auto;
-    /* position: absolute;
+    position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%); */
+    transform: translate(-50%, -50%);
 }
 .player-cards{
     z-index: 5;
@@ -74,4 +74,8 @@ button{
     top: 20px;
     left: 20px;
     color: white;
+}
+.login-label{
+    color: white;
+    padding-right: 20px;
 }

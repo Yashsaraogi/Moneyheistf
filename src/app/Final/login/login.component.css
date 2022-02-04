@@ -1,0 +1,36 @@
+.blur-back{
+    background-color: rgba(255, 255, 255, 0.13);
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 40px rgba(8, 7, 16, 0.6);
+}
+.main{
+    display: grid;
+    grid-template-columns: 55% 45%;
+}
+button{
+    border: none;
+    border-radius: 9999px;
+    outline: none;
+    background-color: rgb(192, 0, 0);
+    color: black;
+    padding: 10px 20px;
+    margin-top: 40px;
+    box-shadow: 0 0 40px rgba(8, 7, 16, 0.6);
+    margin: auto;
+    text-align: center;
+}
+h1{
+    color: white;
+}   
+.question-box{
+    width: 45%;
+    justify-content: end;
+}
+.main{
+    width: 100%;
+    background: url(assets/img/money/land.png);
+    background-size: cover;
+    height: 100vh;
+}

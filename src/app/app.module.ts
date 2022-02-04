@@ -22,6 +22,9 @@ import { EventComponent } from './Final/event/event.component';
 import { FooterComponent } from './Final/footer/footer.component';
 import { CoursesComponent } from './Final/courses/courses.component';
 import { QuizComponent } from './Final/quiz/quiz.component';
+import { LoginComponent } from './Final/login/login.component';
+import { LoginMainComponent } from './Final/login-main/login-main.component';
+import { BidComponent } from './Final/bid/bid.component';
 
 @NgModule({
     declarations: [
@@ -42,7 +45,13 @@ import { QuizComponent } from './Final/quiz/quiz.component';
        
         CoursesComponent,
        
-        QuizComponent
+        QuizComponent,
+       
+        LoginComponent,
+       
+        LoginMainComponent,
+       
+        BidComponent
     ],
     imports: [
         BrowserAnimationsModule,

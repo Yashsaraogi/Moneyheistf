@@ -12,7 +12,7 @@ import { BlogpostsComponent } from './examples/blogposts/blogposts.component';
 import { ContactusComponent } from './examples/contactus/contactus.component';
 import { EcommerceComponent } from './examples/ecommerce/ecommerce.component';
 import { LandingComponent } from './examples/landing/landing.component';
-import { LoginComponent } from './examples/login/login.component';
+// import { LoginComponent } from './examples/login/login.component';
 import { ProductpageComponent } from './examples/productpage/productpage.component';
 import { ProfileComponent } from './examples/profile/profile.component';
 import { RegisterComponent } from './examples/register/register.component';
@@ -25,6 +25,9 @@ import { EventComponent } from './Final/event/event.component';
 import { BlogComponent } from './Final/blog/blog.component';
 import { CoursesComponent } from './Final/courses/courses.component';
 import { QuizComponent } from './Final/quiz/quiz.component';
+import { LoginComponent } from './Final/login/login.component';
+import { LoginMainComponent } from './Final/login-main/login-main.component';
+import { BidComponent } from './Final/bid/bid.component';
 
 
 const routes: Routes =[
@@ -50,7 +53,12 @@ const routes: Routes =[
     { path: 'event',    component: EventComponent },
     { path: 'blog',    component: BlogComponent },
     { path: 'courses',    component: CoursesComponent },
-    { path: 'quiz', component:QuizComponent }
+    { path: 'quiz', component:QuizComponent },
+    { path: 'land', component:LoginComponent },
+    { path:'login', component:LoginMainComponent},
+    { path:'bid', component:BidComponent}
+
+
 ];
 
 @NgModule({
