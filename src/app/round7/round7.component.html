@@ -1,23 +1,81 @@
 <div class="main">
     <div class="bullets blur-back">
-        <p>Cash</p>
-        <p>Hostages</p>
-        <p>Drilling sessions</p>
+        <p><img src="assets/img/money/money.png" class="counter-icon">Cash : {{cash}}</p>
+        <p><img src="assets/img/money/crowd.png" class="counter-icon">Hostages : {{hostage}}</p>
+        <p><img src="assets/img/money/drill.png" class="counter-icon">Drilling sessions : {{drills}}</p>
     </div>
     <!-- <span class="overlay"></span>
     <span class="back"></span> -->
     <div class="question-box blur-back">
-        <h1>Question 1 </h1>
-        <input [(ngModel)]="par71">
+        <p class="text-center" style="color:white">
+            You start moving out, war breaks out. Now your decision of keeping Berlin or Nairobi alive will affect your
+            soldiers’ as well as your cash movement outside of the Royal Mint Of Spain.
+
+            <br>
+            Answer this question to fight the final battle
+
+        </p>
+
+        <p class="text-center" style="color:white">
+            He is the founder of ?
+
+        </p>
+        <img src="https://2k21.s3.ap-south-1.amazonaws.com/Screenshot+2022-02-05+153544.jpg" alt="">
+
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="card justify-content-center">
+                    <div class="card-title text-center">
+                        <h3 style="margin: 0">Cred</h3>
+                    </div>
+                    <p class="text-center">
+                        <button class="btn btn-round" (click)="par71='Cred';contactSubmit() "
+                            style="margin-top: 0">Select</button>
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card justify-content-center">
+                    <div class="card-title text-center">
+                        <h3 style="margin: 0">Phone pe</h3>
+                    </div>
+                    <p class="text-center">
+                        <button class="btn btn-round" (click)="par71='Phone pe';contactSubmit() "
+                            style="margin-top: 0">Select</button>
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card justify-content-center">
+                    <div class="card-title text-center">
+                        <h3 style="margin: 0">Paytm</h3>
+                    </div>
+                    <p class="text-center">
+                        <button class="btn btn-round" (click)="par71='Paytm';contactSubmit() "
+                            style="margin-top: 0">Select</button>
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card justify-content-center">
+                    <div class="card-title text-center">
+                        <h3 style="margin: 0">PayPal</h3>
+                    </div>
+                    <p class="text-center">
+                        <button class="btn btn-round" (click)="par71='PayPal';contactSubmit() "
+                            style="margin-top: 0">Select</button>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!-- <input [(ngModel)]="par71">
         <br>
-        <button (click)="contactSubmit()">Submit</button>
+        <button (click)="contactSubmit()">Submit</button> -->
     </div>
     <div class="player-cards">
         <div class="job-card rio">
             <h4 style="text-align: center;">Name</h4>
         </div>
     </div>
-    
+
 </div>
-
-

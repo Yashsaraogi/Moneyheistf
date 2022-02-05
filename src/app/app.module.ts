@@ -27,6 +27,7 @@ import { Round4Component } from './round4/round4.component';
 import { Round5Component } from './round5/round5.component';
 import { Round6Component } from './round6/round6.component';
 import { Round7Component } from './round7/round7.component';
+import { RndComponent } from './rnd/rnd.component';
 
 @NgModule({
     declarations: [
@@ -58,7 +59,9 @@ import { Round7Component } from './round7/round7.component';
        
         Round6Component,
        
-        Round7Component
+        Round7Component,
+       
+        RndComponent
     ],
     imports: [
         BrowserAnimationsModule,

@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule, } from '@angular/common';
-import { BrowserModule  } from '@angular/platform-browser';
+import { BrowserModule } from '@angular/platform-browser';
 import { Routes, RouterModule } from '@angular/router';
 
 import { PresentationComponent } from './presentation/presentation.component';
@@ -30,36 +30,40 @@ import { Round4Component } from './round4/round4.component';
 import { Round5Component } from './round5/round5.component';
 import { Round6Component } from './round6/round6.component';
 import { Round7Component } from './round7/round7.component';
+import { RndComponent } from './rnd/rnd.component';
 
 
-const routes: Routes =[
-    { path: '', redirectTo: 'quiz', pathMatch: 'full' },
-    { path: 'presentation',         component: PresentationComponent },
-    { path: 'components',           component: ComponentsComponent },
-    { path: 'sections',             component: SectionsComponent },
-    { path: 'nucleoicons',          component: NucleoiconsComponent },
-    { path: 'examples/aboutus',     component: AboutusComponent },
-    { path: 'examples/blogpost',    component: BlogpostComponent },
-    { path: 'examples/blogposts',   component: BlogpostsComponent },
-    { path: 'examples/contactus',   component: ContactusComponent },
-    { path: 'examples/ecommerce',   component: EcommerceComponent },
-    { path: 'examples/landing',     component: LandingComponent },
-    { path: 'examples/login',       component: LoginComponent },
-    { path: 'examples/pricing',     component: PricingComponent },
-    { path: 'examples/productpage', component: ProductpageComponent },
-    { path: 'examples/profile',     component: ProfileComponent },
-    { path: 'examples/register',    component: RegisterComponent },
-    { path: 'round2', component:Round2Component },
-    { path: 'round3', component:Round3Component },
-    { path: 'round4', component:Round4Component },
-    { path: 'round5', component:Round5Component },
-    { path: 'round6', component:Round6Component },
-    { path: 'round7', component:Round7Component },
+const routes: Routes = [
+    { path: '', redirectTo: 'land', pathMatch: 'full' },
+    // { path: 'presentation', component: PresentationComponent },
+    // { path: 'components', component: ComponentsComponent },
+    // { path: 'sections', component: SectionsComponent },
+    // { path: 'nucleoicons', component: NucleoiconsComponent },
+    // { path: 'examples/aboutus', component: AboutusComponent },
+    // { path: 'examples/blogpost', component: BlogpostComponent },
+    // { path: 'examples/blogposts', component: BlogpostsComponent },
+    // { path: 'examples/contactus', component: ContactusComponent },
+    // { path: 'examples/ecommerce', component: EcommerceComponent },
+    // { path: 'examples/landing', component: LandingComponent },
+    // { path: 'examples/login', component: LoginComponent },
+    // { path: 'examples/pricing', component: PricingComponent },
+    // { path: 'examples/productpage', component: ProductpageComponent },
+    // { path: 'examples/profile', component: ProfileComponent },
+    // { path: 'examples/register', component: RegisterComponent },
 
-    { path: 'quiz', component:QuizComponent },
-    { path: 'land', component:LoginComponent },
-    { path:'login', component:LoginMainComponent},
-    { path:'bid', component:BidComponent}
+    { path: 'round2', component: Round2Component },
+    { path: 'round3', component: Round3Component },
+    { path: 'round4', component: Round4Component },
+    { path: 'round5', component: Round5Component },
+    { path: 'round6', component: Round6Component },
+    { path: 'round7', component: Round7Component },
+
+
+    { path: 'round', component: RndComponent },
+    { path: 'quiz', component: QuizComponent },
+    { path: 'land', component: LoginComponent },
+    { path: 'login', component: LoginMainComponent },
+    { path: 'bid', component: BidComponent }
 
 
 ];
@@ -68,8 +72,8 @@ const routes: Routes =[
     imports: [
         CommonModule,
         BrowserModule,
-        RouterModule.forRoot(routes,{
-          useHash: false
+        RouterModule.forRoot(routes, {
+            useHash: false
         })
     ],
     exports: [

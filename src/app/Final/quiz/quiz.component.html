@@ -1,29 +1,200 @@
 <div class="main">
     <div class="bullets blur-back">
-        <p><img src="assets/img/money/money.png" class="counter-icon">Cash</p>
-        <p><img src="assets/img/money/crowd.png" class="counter-icon">Hostages</p>
-        <p><img src="assets/img/money/drill.png" class="counter-icon">Drilling sessions</p>
+        <p><img src="assets/img/money/money.png" class="counter-icon">Cash : {{cash}}</p>
+        <p><img src="assets/img/money/crowd.png" class="counter-icon">Hostages : {{hostage}}</p>
+        <p><img src="assets/img/money/drill.png" class="counter-icon">Drilling sessions : {{drills}}</p>
     </div>
     <!-- <span class="overlay"></span>
     <span class="back"></span> -->
     <div class="question-box blur-back">
-        
-        <h1>Question 1 </h1>
-        <input [(ngModel)]="par11">
-        <br>
-        <h1>Question 2 </h1>
-        <input [(ngModel)]="par12">
-        <br>
-        <h1>Question 3</h1>
-        <input [(ngModel)]="par13">
-        <br>
-        <button (click)="contactSubmit()">Submit</button>
-    </div>
-    <div class="player-cards">
-        <div class="job-card rio">
-            <h4 style="text-align: center;">Name</h4>
-        </div>
-    </div>
-    
-</div>
+        <div *ngIf="index==0">
+            <p class="text-center" style="color:white">
+                You enter the mint. Your primary motive is to guard the gate, take hostages under control and open safe
+            </p>
 
+            <p class="text-center" style="color:white">
+                Answer this correctly to gaurd the gate and take hostages under control
+            </p>
+
+            <p class="text-center" style="color:white">Question 1 </p>
+            <p class="text-center" style="color:white">
+                Lipton, Brooke Bond, and Taj Mahal are all brands of which firm?
+            </p>
+            <!-- <input [(ngModel)]="par11"> -->
+
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <div class="card justify-content-center">
+                        <div class="card-title text-center">
+                            <h3 style="margin: 0">PnG</h3>
+                        </div>
+                        <p class="text-center">
+                            <button class="btn btn-round" (click)="par11='PnG';contactSubmit() "
+                                style="margin-top: 0">Select</button>
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card justify-content-center">
+                        <div class="card-title text-center">
+                            <h3 style="margin: 0">HUL</h3>
+                        </div>
+                        <p class="text-center">
+                            <button class="btn btn-round" (click)="par11='HUL';contactSubmit() "
+                                style="margin-top: 0">Select</button>
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card justify-content-center">
+                        <div class="card-title text-center">
+                            <h3 style="margin: 0">ITC</h3>
+                        </div>
+                        <p class="text-center">
+                            <button class="btn btn-round" (click)="par11='ITC';contactSubmit() "
+                                style="margin-top: 0">Select</button>
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card justify-content-center">
+                        <div class="card-title text-center">
+                            <h3 style="margin: 0">Tata</h3>
+                        </div>
+                        <p class="text-center">
+                            <button class="btn btn-round" (click)="par11='Tata';contactSubmit() "
+                                style="margin-top: 0">Select</button>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+        <div *ngIf="index==1">
+            <p class="text-center" style="color:white">
+                You enter the mint. Your primary motive is to guard the gate, take hostages under control and open safe
+            </p>
+            <p class="text-center" style="color:white">
+                Answer this correctly to open safe
+            </p>
+            <p class="text-center" style="color:white">Question 2 </p>
+            <p class="text-center" style="color:white">
+                Answer the following question related to USP
+                You own a company that has a competitor company as well.
+                The Venn Diagram shows different aspects in the form of zones A,B,C,D.
+                In order to be successful in your venture, which zone should you focus the most on ?
+            </p>
+            <div class="row justify-content-center">
+                <div class="col-md-5">
+
+                    <img src="https://2k21.s3.ap-south-1.amazonaws.com/Screenshot+2022-02-05+141532.jpg" alt="">
+                </div>
+                <div class="col-md-7 row justify-content-center">
+                    <div class="col-md-6">
+                        <div class="card justify-content-center">
+                            <div class="card-title text-center">
+                                <h3 style="margin: 0">A</h3>
+                            </div>
+                            <p class="text-center">
+                                <button class="btn btn-round" (click)="par12='a';contactSubmit() "
+                                    style="margin-top: 0">Submit</button>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card justify-content-center">
+                            <div class="card-title text-center">
+                                <h3 style="margin: 0">B</h3>
+                            </div>
+                            <p class="text-center">
+                                <button class="btn btn-round" (click)="par12='b';contactSubmit() "
+                                    style="margin-top: 0">Submit</button>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card justify-content-center">
+                            <div class="card-title text-center">
+                                <h3 style="margin: 0">C</h3>
+                            </div>
+                            <p class="text-center">
+                                <button class="btn btn-round" (click)="par12='c';contactSubmit() "
+                                    style="margin-top: 0">Submit</button>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card justify-content-center">
+                            <div class="card-title text-center">
+                                <h3 style="margin: 0">D</h3>
+                            </div>
+                            <p class="text-center">
+                                <button class="btn btn-round" (click)="par12='d';contactSubmit() "
+                                    style="margin-top: 0">Submit</button>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- <input [(ngModel)]="par12"> -->
+
+
+        </div>
+
+        <div *ngIf="index==2">
+            <p class="text-center" style="color:white">
+
+                Rio is an important asset of your team. He is an excellent hacker and you can use him to disable cameras
+                in the mint which might help you later. However, if you use Rio, he will not be able to do any work for
+                the next 2 rounds.
+
+            </p>
+
+            <p class="text-center" style="color:white">Question 3</p>
+            <p class="text-center" style="color:white">
+                Do you want to use Rio ?
+            </p>
+            <div class="player-cards">
+                <div class="job-card rio">
+                </div>
+            </div>
+            <!-- <input [(ngModel)]="par13"> -->
+            <br>
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <div class="card justify-content-center">
+                        <div class="card-title text-center">
+                            <h3 style="margin: 0">Yes</h3>
+                        </div>
+                        <p class="text-center">
+                            <button class="btn btn-round" (click)="par13='true';contactSubmit() "
+                                style="margin-top: 0">Submit</button>
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card justify-content-center">
+                        <div class="card-title text-center">
+                            <h3 style="margin: 0">No</h3>
+                        </div>
+                        <p class="text-center">
+                            <button class="btn btn-round" (click)="par13='false';contactSubmit() "
+                                style="margin-top: 0">Submit</button>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div *ngIf="index==3">
+            <h4 class="text-center" style="color:white">Round 1 Completed</h4>
+        </div>
+
+        <!-- <button (click)="contactSubmit()">Submit</button> -->
+    </div>
+
+
+</div>

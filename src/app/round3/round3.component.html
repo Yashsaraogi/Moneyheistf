@@ -1,23 +1,75 @@
 <div class="main">
     <div class="bullets blur-back">
-        <p>Cash</p>
-        <p>Hostages</p>
-        <p>Drilling sessions</p>
+        <p><img src="assets/img/money/money.png" class="counter-icon">Cash : {{cash}}</p>
+        <p><img src="assets/img/money/crowd.png" class="counter-icon">Hostages : {{hostage}}</p>
+        <p><img src="assets/img/money/drill.png" class="counter-icon">Drilling sessions : {{drills}}</p>
     </div>
     <!-- <span class="overlay"></span>
     <span class="back"></span> -->
     <div class="question-box blur-back">
-        <h1>Question 1 </h1>
-        <input [(ngModel)]="par31">
+        <p class="text-center" style="color:white">
+            Police try an intervention in the mint. You require 3 gunmen at the gate to defend. Your decision of taking
+            the Extra Security will affect in some form of losing or gaining some asset
+
+            <br>
+            Answer this question to deal with the intervention
+
+            <br>
+            Company Advertised in this image ?
+
+        </p>
+        <img src="https://2k21.s3.ap-south-1.amazonaws.com/Screenshot+2022-02-05+145404.jpg" alt="">
         <br>
-        <button (click)="contactSubmit()">Submit</button>
-    </div>
-    <div class="player-cards">
-        <div class="job-card rio">
-            <h4 style="text-align: center;">Name</h4>
+        <!-- <input [(ngModel)]="par31" plac>
+            <br>
+            <button (click)="contactSubmit()">Submit</button> -->
+        <div class="row justify-content-center" style="margin-top:10px;">
+            <div class="col-md-6">
+                <div class="card justify-content-center">
+                    <div class="card-title text-center">
+                        <h3 style="margin: 0">Chupa Chups</h3>
+                    </div>
+                    <p class="text-center">
+                        <button class="btn btn-round" (click)="par31='Chupa Chups';contactSubmit() "
+                            style="margin-top: 0">Submit</button>
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card justify-content-center">
+                    <div class="card-title text-center">
+                        <h3 style="margin: 0">Alpenlebie</h3>
+                    </div>
+                    <p class="text-center">
+                        <button class="btn btn-round" (click)="par31='Alpenlebie';contactSubmit() "
+                            style="margin-top: 0">Submit</button>
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card justify-content-center">
+                    <div class="card-title text-center">
+                        <h3 style="margin: 0">Jolly Rancher</h3>
+                    </div>
+                    <p class="text-center">
+                        <button class="btn btn-round" (click)="par31='Jolly Rancher';contactSubmit() "
+                            style="margin-top: 0">Submit</button>
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card justify-content-center">
+                    <div class="card-title text-center">
+                        <h3 style="margin: 0">Pop On</h3>
+                    </div>
+                    <p class="text-center">
+                        <button class="btn btn-round" (click)="par31='Pop On';contactSubmit() "
+                            style="margin-top: 0">Submit</button>
+                    </p>
+                </div>
+            </div>
         </div>
     </div>
-    
+
+
 </div>
-
-

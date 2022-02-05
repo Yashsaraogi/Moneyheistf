@@ -1,9 +1,14 @@
 <div class="main">
-    <div class="question-box blur-back">
-        <h1>Bidding Starts</h1>
-        <input>
+    <div class="question-box blur-back" *ngIf="active">
+        <h1 class="text-center">Bidding Starts</h1>
+        <input type="number" [(ngModel)]="amount" class="form-control" placeholder="Bid Amount">
         <br>
-        <button>Bid</button>
+        <button style="margin: auto" (click)="submit()">Bid</button>
+        <button *ngIf="show" (click)="nextlevel()" style="margin-left: 10px">Next Level --></button>
     </div>
-    
+    <div class=" question-box blur-back" *ngIf="!active">
+        <h1 class="text-center">Bidding is Closed</h1>
+        <button *ngIf="show" (click)="nextlevel()" style="margin-left: 10px">Next Level --></button>
+    </div>
+
 </div>
