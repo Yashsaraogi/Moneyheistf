@@ -35,7 +35,7 @@ export class LoginMainComponent implements OnInit {
     body.append('member1', this.mem1)
     body.append('member2', this.mem2)
     body.append('member3', this.mem3)
-    body.append('member4', this.mem4)
+    
     this.http.post<any>(url,body).subscribe(
       data=>{
         console.log(data)
