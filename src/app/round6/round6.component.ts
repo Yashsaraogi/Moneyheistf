@@ -11,15 +11,19 @@ import { Route } from '@angular/compiler/src/core';
   styleUrls: ['./round6.component.css']
 })
 export class Round6Component implements OnInit {
-  round = '7' ;
+  round = '6' ;
+  team;
   constructor(private http: HttpClient, private route: ActivatedRoute,private router: Router,private modalService: NgbModal,) { }
 
   ngOnInit(): void {
+    console.log(localStorage.getItem('teamname'))
+    this.team= localStorage.getItem('teamname')
   }
   contactSubmit(){
   var url1="https://anupam.ecell.in/main/";
   var body = new FormData();
   body.append('round', this.round)
+  body.append('team', this.team)
   
   
   this.http.post<any>(url1,body).subscribe(
